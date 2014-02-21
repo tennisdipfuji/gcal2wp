@@ -16,3 +16,8 @@ tmp
 .yardoc
 _yardoc
 doc/
+
+# original
+secret_keys.rb
+/vendor/bundle
+.DS_Store
