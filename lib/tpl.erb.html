@@ -1,0 +1,34 @@
+<div style="font-size:1.15em">
+<p><a href="/schedule/#respond">コメントはこちらにどうぞ！</a></p>
+<p>当日の練習状況などは「<a href="https://twitter.com/TennisDIPFuji">今日の状況(Twitterへ)</a>」で確認することができます！</p>
+<p>Googleカレンダーをお使いの方は「<a href="https://www.google.com/calendar/render?cid=tennisdipfuji@gmail.com">テニス倶楽部DIP富士のGoogleカレンダー</a>」で自分のカレンダーに取り込むこともできますよ</p>
+<p style="text-align:right;"><%= Time.now.strftime('%m/%d') %>更新</p>
+% mhc = 0
+% @c.each do |e|
+%   unless mhc == e[:mh]
+%     unless mhc == 0
+</dl>
+</div>
+%     end
+<h2 style="padding:6px;border-bottom:1px solid #aaa;border-left:12px solid #aaa;"><%= e[:mh] %>月</h2>
+<div style="margin:1em;">
+<dl>
+%     mhc = e[:mh]
+%     close_flg = true
+%   end
+<dt><span style="font-size:1.2em;line-height:2em;">■<%= e[:st].goodfmt %> - <%= e[:en].goodfmt(false) %> <span><%= e[:tl] %></span></dt>
+  <dd>
+    <ul>
+% unless e[:pl].empty?
+    <li><%= e[:pl] %> <span>(<a href="<%= e[:mp] %>">地図</a>)</span></li>
+% else
+    <li>別途連絡</li>
+% end
+    <li><%= e[:cn] %>
+    </ul>
+  </dd>
+% end
+</dl>
+</div>
+<p><a href="https://www.google.com/calendar/render?cid=tennisdipfuji@gmail.com"><img src="http://www.google.com/calendar/images/calendar_plus_en.gif" alt="テニス倶楽部DIP富士 Googleカレンダー" /></a></p>
+</div>
