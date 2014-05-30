@@ -2,6 +2,6 @@
 see: http://qiita.com/ma2shita/items/93f38e5f783083e88455
 
 ```
-$ bundle exec ruby run.rb
+$ bundle exec ruby oauth2.rb
 ```
 
