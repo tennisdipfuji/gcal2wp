@@ -9,5 +9,5 @@ end
 
 desc "Update to Schedule Page"
 task :update do
-  STDERR.puts Post2Wp.run(Gcal.get.to_html)
+  Post2Wp.run(Gcal.get.to_html)
 end
