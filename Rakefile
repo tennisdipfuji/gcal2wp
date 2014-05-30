@@ -1,6 +1,6 @@
 require "yaml"
-require "#{File.dirname(__FILE__)}/lib/gcal"
-require "#{File.dirname(__FILE__)}/lib/post2wp"
+require_relative "lib/gcal"
+require_relative "lib/post2wp"
 
 desc "Get events"
 task :get do

@@ -1,7 +1,7 @@
 require 'net/http'
 require 'uri'
 require 'time'
-require "#{File.dirname(__FILE__)}/../secret_keys"
+require_relative "secret_keys"
 
 module Post2Wp
   TOKEN_TYPE = 'bearer'

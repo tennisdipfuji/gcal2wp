@@ -4,7 +4,7 @@ require 'time'
 require 'erb'
 require 'cgi'
 require 'json'
-require "#{File.dirname(__FILE__)}/../secret_keys"
+require_relative "secret_keys"
 
 class Time
 	def goodfmt(f = true)
