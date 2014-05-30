@@ -4,7 +4,7 @@ require 'time'
 require 'erb'
 require 'cgi'
 require 'json'
-require_relative "secret_keys"
+require_relative "load_secret"
 
 class Time
 	def goodfmt(f = true)

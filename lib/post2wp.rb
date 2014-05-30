@@ -1,7 +1,7 @@
 require 'net/http'
 require 'uri'
 require 'time'
-require_relative "secret_keys"
+require_relative "load_secret"
 
 module Post2Wp
   TOKEN_TYPE = 'bearer'
