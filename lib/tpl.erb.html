@@ -2,7 +2,7 @@
 <p><a href="/schedule/#respond">コメントはこちらにどうぞ！</a></p>
 <p>当日の練習状況などは「<a href="https://twitter.com/TennisDIPFuji">今日の状況(Twitterへ)</a>」で確認することができます！</p>
 <p>Googleカレンダーをお使いの方は「<a href="https://www.google.com/calendar/render?cid=tennisdipfuji@gmail.com">テニス倶楽部DIP富士のGoogleカレンダー</a>」で自分のカレンダーに取り込むこともできますよ</p>
-<p style="text-align:right;"><%= Time.now.strftime('%m/%d') %>更新</p>
+<p style="text-align:right;"><%= Time.now.strftime('%m/%d %H:%M') %>更新</p>
 % mhc = 0
 % @c.each do |e|
 %   unless mhc == e[:mh]
