@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'net/http'
 require 'uri'
-require './secret_keys'
+require "#{File.dirname(__FILE__)}/../secret_keys"
 
 bd = {client_id: CLIENT_ID, client_secret: CLIENT_SECRET, redirect_uri: REDIRECT_URI}
 
