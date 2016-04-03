@@ -15,7 +15,7 @@ module Post2Wp
     req.set_form_data(bd)
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
-    #http.set_debug_output STDERR
+    http.set_debug_output STDERR
     res = http.start{|h| h.request(req)}
     res.body
   end
